@@ -1,0 +1,1 @@
+CREATE POLICY "Qualquer pessoa pode enviar screenshot" ON storage.objects FOR INSERT TO anon, authenticated WITH CHECK (bucket_id = 'screenshots');
