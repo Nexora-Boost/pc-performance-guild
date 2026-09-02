@@ -14,7 +14,108 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      pedidos: {
+        Row: {
+          armazenamento: string | null
+          contacto: string
+          cpu: string | null
+          created_at: string
+          fps_atual: string | null
+          gpu: string | null
+          id: string
+          info_adicional: string | null
+          jogo: string | null
+          nome: string
+          problema: string
+          ram: string | null
+          resolucao: string | null
+          screenshot_url: string | null
+          social: string | null
+          windows: string | null
+        }
+        Insert: {
+          armazenamento?: string | null
+          contacto: string
+          cpu?: string | null
+          created_at?: string
+          fps_atual?: string | null
+          gpu?: string | null
+          id?: string
+          info_adicional?: string | null
+          jogo?: string | null
+          nome: string
+          problema: string
+          ram?: string | null
+          resolucao?: string | null
+          screenshot_url?: string | null
+          social?: string | null
+          windows?: string | null
+        }
+        Update: {
+          armazenamento?: string | null
+          contacto?: string
+          cpu?: string | null
+          created_at?: string
+          fps_atual?: string | null
+          gpu?: string | null
+          id?: string
+          info_adicional?: string | null
+          jogo?: string | null
+          nome?: string
+          problema?: string
+          ram?: string | null
+          resolucao?: string | null
+          screenshot_url?: string | null
+          social?: string | null
+          windows?: string | null
+        }
+        Relationships: []
+      }
+      resultados: {
+        Row: {
+          config_antes: string | null
+          config_depois: string | null
+          cpu: string | null
+          created_at: string
+          fps_antes: string | null
+          fps_depois: string | null
+          gpu: string | null
+          id: string
+          jogo: string | null
+          observacoes: string | null
+          publicado: boolean
+          ram: string | null
+        }
+        Insert: {
+          config_antes?: string | null
+          config_depois?: string | null
+          cpu?: string | null
+          created_at?: string
+          fps_antes?: string | null
+          fps_depois?: string | null
+          gpu?: string | null
+          id?: string
+          jogo?: string | null
+          observacoes?: string | null
+          publicado?: boolean
+          ram?: string | null
+        }
+        Update: {
+          config_antes?: string | null
+          config_depois?: string | null
+          cpu?: string | null
+          created_at?: string
+          fps_antes?: string | null
+          fps_depois?: string | null
+          gpu?: string | null
+          id?: string
+          jogo?: string | null
+          observacoes?: string | null
+          publicado?: boolean
+          ram?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
